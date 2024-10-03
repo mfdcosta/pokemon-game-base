@@ -39,60 +39,61 @@ h1{
 }
 
 .character {
-    position: absolute;
-    width: 75px;
+    position: absolute;  /* Permite que cada personagem seja posicionado em relação ao elemento pai (a área do jogo) */
+    width: 75px; /* Define a largura padrão para os personagens */
 }
 
+/* Estilização específica para o personagem "Ash" */
 #ash {
-    right: 2px;
-    z-index: 1;
+    right: 2px; /* Posiciona o personagem "Ash" 2 pixels da direita */
+    z-index: 1; /* Define a ordem do empilhamento do elemento */
 }
-
+/* Estilização para o personagem "Zubat" */
 #zubat {
-    display: none;
-    right: 90px;
-    top: 550px;
+    display: none; /* Oculta o personagem "Zubat" inicialmente */
+    right: 90px; /* Posiciona o personagem 90 pixels da direita */
+    top: 550px; /* Posiciona o personagem 550 pixels do topo */
 }
-
+/* Estilização para o personagem "Pikachu" */
 #pikachu {
     display: none; 
     right: 600px;
     top: 330px;
 }
-
+/* Estilização para o personagem "Charmander" */
 #charmander {
    display: none; 
-    width: 65px;
-    right: 175px;
-    top: 55px;
+    width: 65px;  /* Define a largura do personagem */
+    right: 175px;  /* Posiciona o personagem 175 pixels da direita */
+    top: 55px;  /* Posiciona o personagem 55 pixels do topo */
 }
-
+/* Estilização para o controle de música */
 .music-control {
-    width: 50px;
-    top: 48px;
-    right: 48px;
-    position: absolute;
+    width: 50px; /* Define a largura do ícone de controle de música */
+    top: 48px;  /* Posiciona o controle 48 pixels do topo */
+    right: 48px; /* Posiciona o controle 48 pixels da direita */
+    position: absolute;  /* Permite que o controle de música seja posicionado em relação ao body */
 
-    cursor: pointer;
+    cursor: pointer;  /* Muda o cursor para uma mão quando passa sobre o controle */
 }
+
 
 .reset {
-    display: none;
-
-    width: 100px;
-    height: 100px;
+    display: none;  /* Oculta o botão de reiniciar inicialmente */
+    
+    width: 100px; /* Define a largura do botão */
+    height: 100px; /* Define a altura do botão */
 
     cursor: pointer;
 
-    position: absolute;
+    position: absolute; /* Permite que o botão seja posicionado em relação ao body */
     
-    z-index: 3;
+    z-index: 3; /* Define a ordem do empilhamento do botão */
 
 
 }
-
+/* Estilização para o botão de reiniciar */
 .reset:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
+    opacity: 0.8;  /* Reduz a opacidade do botão para 80% quando o mouse passa sobre ele */
+    transform: scale(1.05);  /* Aumenta o tamanho do botão em 5% */
 }
-
